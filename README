@@ -1,3 +1,4 @@
 this is to test gerrit
 this is to test git commit msg
 this is to check master push right
+push to HEAD:refs/for/master
