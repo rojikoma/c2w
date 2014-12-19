@@ -1,0 +1,44 @@
+== Table of Contents ==
+1. general structure
+2. program behaviour & flow
+=======================
+
+== 1. general structure ==
+    cscope  +
+            |- parser
+            |- rule +
+            |       |- gen.expression
+            |       |- language
+
+    web     +
+            |- generator
+
+    db      +
+            |- sqllite
+
+    utili   +
+            |- file_io
+
+    rsrc
+
+== 2. program behaviour & flow ==
+flow should be like this for now?.
+
+(insert cscope file) --parsing--> (generate db) --> (generate web page which utlizes db)
+
+
+== 3. SQLite Installation ==
+
+    Go to SQLite download page and download sqlite-autoconf-*.tar.gz from source code section.
+
+        Follow the following steps:
+
+        $tar xvfz sqlite-autoconf-3080600.tar.gz
+        $cd sqlite-autoconf-3080600
+        $./configure --prefix=/usr/local
+        $make
+        $make install
+
+    after installation, run sqlite3
+
+    if your system complains about header and source version mismatch, try copying /usr/local/lib/libsqlite3.so.0.8.6(for example) to /usr/lib/x86_64-linux-gnu/libs

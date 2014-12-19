@@ -1,0 +1,27 @@
+== Table of Contents ==
+1. general structure
+2. program behaviour & flow
+=======================
+
+== 1. general structure ==
+    cscope  +
+            |- parser
+            |- rule +
+            |       |- gen.expression
+            |       |- language
+
+    web     +
+            |- generator
+
+    db      +
+            |- sqllite
+
+    utili   +
+            |- file_io
+
+    rsrc
+
+== 2. program behaviour & flow ==
+flow should be like this for now?.
+
+(insert cscope file) --parsing--> (generate db) --> (generate web page which utlizes db)
